@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="form-diary">
+      <h1>Dear Diary</h1>
+      <div class="form-element">
+        <label for="validDate">Date :</label>
+        <input type="date" id="validDate" required />
+      </div>
+      <div class="form-element">
+        <label for="notes">Notes :</label>
+        <div>
+          <textarea
+            name="notes"
+            id="notes"
+            rows="10"
+            cols="23"
+            required
+          ></textarea>
+          <span id="error"></span>
+        </div>
+      </div>
+      <input type="submit" id="submitBtn" value="Add Note" />
+    </form>
+    <div id="diary-card"></div>
+  </body>
+</html>
